@@ -1,0 +1,10 @@
+<main class="sidebar__page" onclick="this.remove()">
+
+	<div class="sidebar__divider"> <?=$item->title?> </div>
+
+	<a href="category<?=$item->thisid?>" class="sidebar__item <?=$checked?>" onclick="event.stop()">
+		<?=$item->title?>
+	</a>
+
+</main>
+

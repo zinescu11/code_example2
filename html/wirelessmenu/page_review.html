@@ -1,0 +1,25 @@
+<main class="review__page" onclick="this.remove()">
+	
+	<em class="review__closebtn"> <svg class="icon"><use href="#angle-down"/></svg> </em>
+
+	<form class="review__form" onclick="event.stop()" onsubmit="review__sendform(this); return false">
+		
+		<div class="review__dash">&mdash;</div>
+
+		<div class="review__title">
+			Если у вас есть справедливое замечание к сервису или кухне, пожалуйста, расскажите нам.
+			Вы можете быть уверены, что ваше сообщение будет отправлено непосредственно высшему менеджменту.
+		</div>
+
+		<input class="review__input" autocomplete="off" placeholder="Ваш телефон" name="phone" required>
+
+		<textarea class="review__input" autocomplete="off" placeholder="Замечание..." name="message" rows="3" required></textarea>
+
+		<input name="email" value="<?=$email?>" hidden>
+			
+		<button class="review__postbtn"> Отправить </button>
+		
+	</form>
+
+</main>
+
