@@ -1,1 +1,0 @@
-q:/bin/git/bin/git.exe %*
